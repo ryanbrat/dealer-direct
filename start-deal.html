@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Start Deal</title>
+  <meta name="description" content="">
+ <meta content="width=device-width, initial-scale=1" name="viewport" />
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="top-bar">
+    <img src="./img/teslar-logo.png">
+    <div>
+      <nav>
+        <li><a href="#">New Deal</a></li>
+        <li><a href="#">Pending Deals</a></li>
+        <li><a href="#">Deal History</a></li>
+        <li><a href="#">View / Edit Items</a></li>
+      </nav>
+    </div>
+  </div>
+
+<div class="page-container">
+
+  <div id="recent-deals" class="container recentDeals">
+    <button onclick="hideFunction()" class="show-hide">Show/Hide</button>
+    <h3>Deals Recently Responded</h3>
+    <p><a href="#">John Smith - $2000 Polaris Quad 4x4</a></p>
+    <p><a href="#">George Mathis - $800 Zero Turn Mower</a></p>
+  </div>
+
+<div class="new-deal-container">
+  <h1>New Deal</h1>
+  <div class="flex-container">
+
+    <div class="container">
+      <h3>Add Items to Deal</h3>
+      <form>
+        <div class="field-label-container label-top">
+          <label for="item-type">Item Type</label>
+          <select id="item-type" name="item type">
+            <option value="Item 1">Item 1</option>
+            <option value="Item 2">Item 2</option>
+            <option value="Item 3">Item 3</option>
+          </select>
+        </div>
+        <div class="field-label-container label-top">
+          <label for="item-mode">Mode</label>
+          <select id="item-mode" name="item mode">
+            <option value="Mode 1">Mode 1</option>
+            <option value="Mode 2">Mode  2</option>
+            <option value="Mode 3">Mode  3</option>
+          </select>
+        </div>
+        <div class="field-label-container label-top">
+          <label for="password">Password</label>
+          <input id="password" type="password" name="Password" placeholder="password" required>
+        </div>
+        <button class="orange-form-button btn-right" type="submit"><span class="button-text">Add To Deal</span></button>
+      </form>
+
+      <form>
+          <div class="field-label-container label-top">
+            <label for="item-name">New Item Name</label>
+            <input id="item-name" type="text" name="Item Name" placeholder="Enter item name" required>
+          </div>
+          <div class="field-label-container label-top">
+            <label for="item-value">New Item Value</label>
+            <input id="item-value" type="text" name="Item Value" placeholder="Enter item value" required>
+          </div>
+          <div class="field-label-container label-top">
+            <label for="item-sale-price">New Item Sale Price</label>
+            <input id="item-sale-price" type="text" name="Item Sale Price" placeholder="Enter sale price" required>
+        </div>
+        <button class="orange-form-button btn-right" type="submit"><span class="button-text">Add To Deal</span></button>
+      </form>
+    </div>
+
+    <div class="container">
+
+      <span>
+        <h3 class="deal-card-title">Items on Deal</h3>
+        <input form="items-on-deal" class="remove"  type="reset" value="Remove">
+      </span>
+
+      <form id="items-on-deal">
+        <div class="form-row">
+          <div class="field-label-container label-top">
+            <label for="item">Item</label>
+            <input id="item" type="text" name="Item" placeholder="Enter item name" required>
+            </div>
+            <div class="field-label-container label-top">
+            <label for="year">Year</label>
+            <input id="year" type="number" name="Year" placeholder="ex: 2012" min="1900" max="3000" required>
+            </div>
+          </div>
+
+        <div class="field-label-container label-top">
+          <label for="description">Description</label>
+          <input id="description" type="text" name="Description" placeholder="Enter description" required>
+        </div>
+
+        <div class="form-row">
+          <div class="field-label-container label-top">
+            <label for="value">Value</label>
+            <input id="value" class="currency-input" type="number" name="Value" value="" min="1" step="any" required>
+          </div>
+          <div class="field-label-container label-top">
+            <label for="price">Sale Price</label>
+            <input id="price" class="currency-input" type="number" name="Price" value="" min="1" step="any" required>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="field-label-container right-input">
+            <label for="ammount">Ammount Requested</label>
+            <input id="ammount" class="currency-input" type="number" name="Ammount" value="" min="1" step="any" required>
+          </div>
+        </div>
+
+        <button class="orange-form-button btn-right" type="submit"><span class="button-text">Start Deal</span></button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

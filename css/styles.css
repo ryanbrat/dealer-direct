@@ -1,0 +1,246 @@
+*{font-family: sans-serif;}
+
+/*********************
+Container and layout styles
+*********************/
+
+.form-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.recentDeals {
+  order: 3;
+  max-height: 800px;
+  transition: max-height 0.2s ease-out;
+}
+
+.new-deal-container {
+  background-color: #444;
+  border-radius: 8px;
+  margin: 10px;
+  flex-grow: 1;
+  max-width: 1000px;
+}
+
+.new-deal-container div {
+  flex-grow: 1;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-deal-container h1{
+  text-align: center;
+  color: #fff;
+}
+
+.deal-card-title {
+  display: inline-block;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*********************
+Top bar and menu styles
+*********************/
+
+.logo-img {
+  align-self: center;
+  max-width: 100%;
+  margin: 10px;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  justify-content: center;
+}
+
+.top-bar  nav{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+.top-bar  nav li {
+list-style-type: none;
+}
+
+.top-bar  nav li a{
+  list-style-type: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid #f36a22;
+  border-radius: 6px;
+  color: #444;
+  text-decoration-line: none;
+  white-space:nowrap;
+  display: block;
+  min-width: 200px;
+  text-align: center;
+}
+
+/*********************
+Button styles
+*********************/
+
+.btn-center {
+  align-self: center;
+}
+
+.btn-right {
+  align-self: flex-end;
+}
+
+.button-text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show-hide {
+  align-self: flex-end;
+}
+
+.hide {
+  max-height: 18px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.remove {
+  float:right;
+  display: inline-block;
+  flex: none;
+}
+
+.orange-form-button {
+  background: grey;
+  color: #fff;
+  border-radius: 20px;
+  border: 3px solid #f36a22;
+  padding: 8px 14px;
+  margin: 20px;
+  display: flex;
+  width: 80%;
+}
+
+/*********************
+Label and input styles
+*********************/
+
+.field-label-container {
+  margin: 10px;
+}
+
+.field-label-container  label {
+  color: #f36a22;
+}
+
+form input, form select {
+  padding: 8px;
+}
+
+.checkbox {
+  margin: 10px;
+}
+
+.currency-input {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='16px' width='85px'><text x='2' y='14' fill='gray' font-size='18'>$</text></svg>");
+    background-repeat: no-repeat;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-input {
+  align-self: center;
+}
+
+.right-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-top {
+  display: flex;
+  flex-direction: column;
+}
+
+/*********************
+MEDIA QUERRIES
+*********************/
+
+@media screen and (min-width: 800px) {
+  .form-container {
+    padding: 80px;
+    border: 5px solid grey;
+  }
+
+  .orange-form-button {
+    width: auto;
+  }
+
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .top-bar {
+    flex-direction: row;
+  }
+
+  .page-container {
+    flex-direction: row;
+  }
+
+  .recentDeals {
+    order: 0;
+  }
+
+  .top-bar  nav li a{
+    padding: 14px;
+    margin: 10px;
+    min-width: 160px;
+  }
+
+  .form-row {
+    flex-direction: row;
+  }
+
+  .right-input {
+    align-self: flex-end;
+    display: block;
+  }
+
+}
