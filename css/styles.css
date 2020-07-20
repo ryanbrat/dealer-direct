@@ -84,6 +84,15 @@ form {
 Top bar and menu styles
 *********************/
 
+.chat-bubble {
+  max-width: 50px;
+}
+
+.notifications {
+  display: flex;
+  justify-content: center;
+}
+
 .logo-img {
   align-self: center;
   max-width: 100%;
@@ -109,7 +118,7 @@ Top bar and menu styles
 list-style-type: none;
 }
 
-.top-bar  nav li a{
+.top-bar  nav li a {
   list-style-type: none;
   padding: 10px 20px;
   margin: 5px;
@@ -255,6 +264,10 @@ MEDIA QUERRIES
   .right-input {
     align-self: flex-end;
     display: block;
+  }
+
+  .notifications {
+    justify-content: flex-end;
   }
 
 }
