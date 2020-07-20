@@ -47,7 +47,7 @@
       </div>
       <div class="field-label-container label-top">
         <label for="item-name">SSN</label>
-        <input id="item-name" type="text" name="Item Name" placeholder="000-00-0000" required>
+        <input id="item-name" type="number" name="Item Name" placeholder="000-00-0000" oninput="javascript: if (this.value.length > this.maxLength) this.value =this.value.slice(0, this.maxLength);" maxlength="9" required>
       </div>
       <div class="field-label-container label-top">
         <label for="item-value">XXXX</label>
@@ -118,7 +118,7 @@
       </div>
       <div class="field-label-container label-top">
         <label for="item-value">Zip</label>
-        <input id="item-value" type="text" name="Item Value" placeholder="ex: 72758" required>
+        <input id="item-value" type="number" name="Item Value" placeholder="ex: 72758"  oninput="javascript: if (this.value.length > this.maxLength) this.value =this.value.slice(0, this.maxLength);" maxlength="7" required>
       </div>
       </div>
 

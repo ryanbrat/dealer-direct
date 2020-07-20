@@ -98,7 +98,7 @@
             </div>
             <div class="field-label-container label-top">
             <label for="year">Year</label>
-            <input id="year" type="number" name="Year" placeholder="ex: 2012" min="1900" max="3000" required>
+            <input id="year" type="number" name="Year" placeholder="ex: 2012" min="1900" max="3000" oninput="javascript: if (this.value.length > this.maxLength) this.value =this.value.slice(0, this.maxLength);" maxlength="4" required>
             </div>
           </div>
 
